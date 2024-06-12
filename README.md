@@ -22,7 +22,7 @@ def backward(self):
     for node in reversed(topo):
         node._backward()
 ```
-# Example Usage
+## Example Usage
 Below is an example of how to use the Value class to perform simple operations and compute gradients.
 ```python
 a = Value(2.0)
@@ -32,15 +32,15 @@ d = a * b + c
 d.backward()
 print(f"a.grad: {a.grad}, b.grad: {b.grad}, c.grad: {c.grad}")
 ```
-# Visualizing Decision Boundaries
+## Visualizing Decision Boundaries
 The notebook also demonstrates how to visualize decision boundaries using a simple neural network built with the Value class. Below is an example plot showing the decision boundaries learned by the network.
 
 ![image](https://github.com/TimoTUDA/Micrograd/assets/116888691/0ea773a6-62ae-418d-9d60-990576bc4731)
 ![image](https://github.com/TimoTUDA/Micrograd/assets/116888691/ce10463f-2a42-45f1-be77-59d8e45a4294)
 
 
-# Conclusion
+## Conclusion
 This project provides a hands-on approach to understanding the basics of automatic differentiation and gradient descent. By building the micrograd library from scratch, you can gain a deeper insight into how machine learning frameworks like PyTorch and TensorFlow compute gradients and perform backpropagation.
 
-# Note:
+## Note:
 A very clear and understandable explanation can be found by Andrej Karpathy at https://www.youtube.com/watch?v=VMj-3S1tku0
